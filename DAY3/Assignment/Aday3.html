@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Web Developer</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: hsla(340, 63%, 68%, 0.68);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav {
+            background: rgba(43, 1, 83, 0.977);
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 20px;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+        nav a:hover {
+            color: #ff9a9e;
+        }
+        .hero {
+            padding: 80px 20px;
+            background: linear-gradient(to right, #a829e4, #409cdd);
+            color: rgb(249, 115, 91);
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            border-bottom: 5px ridge #ff758c;
+            border-radius: 10px;
+            margin: 20px;
+        }
+        section {
+            padding: 40px 20px;
+            border: 5px ridge #ff758c;
+            border-radius: 10px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            margin: 20px;
+            background: linear-gradient(to right, #a829e4, #409cdd);
+            color: rgb(249, 115, 91);
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            background: rgb(254, 253, 253);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        table, th, td {
+            border: 2px outset black;
+            padding: 15px;
+        }
+        form input, form textarea {
+            width: 80%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 10px;
+            border: 2px inset #000000;
+        }
+        button {
+            padding: 12px 25px;
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            color: white;
+            border: 2px outset #ff758c;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+        button:hover {
+            background: linear-gradient(to right, #ff7eb3, #ff758c);
+            border: 2px inset #ff758c;
+        }
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+            border-top: 5px ridge #ff758c;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <div class="hero" id="home">
+        <img src="C:\Users\Priyanshu\OneDrive\Pictures\Saved Pictures\download.jpeg" alt="Profile Picture">
+        <h1>Hello! I am John Doe</h1>
+        <p>A passionate Web Developer</p>
+    </div>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, culpa.</p>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+        </ul>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <table>
+            <tr>
+                <th>Project Name</th>
+                <th>Description</th>
+                <th>Technologies Used</th>
+            </tr>
+            <tr>
+                <td><a href="https://www.swamivivekanandauniversity.ac.in/">Project 1</a></td>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>HTML, CSS, JavaScript</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.swamivivekanandauniversity.ac.in/">Project 2</a></td>
+                <td>Lorem, ipsum doloros</td>
+                <td>HTML, CSS</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.swamivivekanandauniversity.ac.in/">Project 3</a></td>
+                <td>Weather application</td>
+                <td>React, JavaScript</td>
+            </tr>
+        </table>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" rows="5" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 John Doe. All rights reserved.</p>
+    </footer>
+</body>
+</html>
