@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard & Calculator</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            background-color: #222;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .keyboard {
+            display: grid;
+            grid-template-columns: repeat(15, 50px);
+            gap: 5px;
+            background: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .key {
+            width: 50px;
+            height: 50px;
+            background: #444;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .key:hover {
+            background: #555;
+            transform: scale(1.1);
+            box-shadow: 0 0 10px #0f0;
+        }
+
+
+        .tab { grid-column: span 2; }
+        .caps { grid-column: span 2.5; }
+        .shift { grid-column: span 3; }
+        .enter { grid-column: span 2; }
+        .space { grid-column: span 6;; }
+
+        .calculator {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #111;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .display {
+            width: 210px;
+            height: 50px;
+            background: #000;
+            color: #0f0;
+            font-size: 24px;
+            text-align: right;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 50px);
+            gap: 5px;
+        }
+
+        .button {
+            width: 50px;
+            height: 50px;
+            background: #444;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            background: #666;
+            transform: scale(1.1);
+            box-shadow: 0 0 10px #ff0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="keyboard">
+
+        <div class="key">Esc</div>
+        <div class="key">F1</div>
+        <div class="key">F2</div>
+        <div class="key">F3</div>
+        <div class="key">F4</div>
+        <div class="key">F5</div>
+        <div class="key">F6</div>
+        <div class="key">F7</div>
+        <div class="key">F8</div>
+        <div class="key">F9</div>
+        <div class="key">F10</div>
+        <div class="key">F11</div>
+        <div class="key">F12</div>
+        <div class="key">PrtSc</div>
+
+        <div class="key tab">Tab</div>
+        <div class="key">Q</div>
+        <div class="key">W</div>
+        <div class="key">E</div>
+        <div class="key">R</div>
+        <div class="key">T</div>
+        <div class="key">Y</div>
+        <div class="key">U</div>
+        <div class="key">I</div>
+        <div class="key">O</div>
+        <div class="key">P</div>
+        <div class="key">[</div>
+        <div class="key">]</div>
+        <br>
+        <div class="key caps">Caps</div>
+        <div class="key">A</div>
+        <div class="key">S</div>
+        <div class="key">D</div>
+        <div class="key">F</div>
+        <div class="key">G</div>
+        <div class="key">H</div>
+        <div class="key">J</div>
+        <div class="key">K</div>
+        <div class="key">L</div>
+        <div class="key">;</div>
+        <div class="key">'</div>
+        <div class="key enter";>Enter</div>
+        <br>
+        <div class="key shift">Shift</div>
+        <div class="key">Z</div>
+        <div class="key">X</div>
+        <div class="key">C</div>
+        <div class="key">V</div>
+        <div class="key">B</div>
+        <div class="key">N</div>
+        <div class="key">M</div>
+        <div class="key">,</div>
+        <div class="key">.</div>
+        <div class="key">/</div>
+        <div class="key">RShift</div>
+        <br>
+        <div class="key">Ctrl</div>
+        <div class="key">Fn</div>
+        <div class="key">Win</div>
+        <div class="key">Alt</div>
+        <div class="key space" style="width: 325px;">Space</div>
+        <div class="key">RAlt</div>
+        <div class="key">Rctrl</div>
+
+    </div>
+
+    <div class="calculator">
+        <div class="display">0</div>
+        <div class="buttons">
+            <div class="button">7</div>
+            <div class="button">8</div>
+            <div class="button">9</div>
+            <div class="button">/</div>
+            <div class="button">4</div>
+            <div class="button">5</div>
+            <div class="button">6</div>
+            <div class="button">*</div>
+            <div class="button">1</div>
+            <div class="button">2</div>
+            <div class="button">3</div>
+            <div class="button">-</div>
+            <div class="button">0</div>
+            <div class="button">.</div>
+            <div class="button">=</div>
+            <div class="button">+</div>
+        </div>
+    </div>
+</body>
+</html>
