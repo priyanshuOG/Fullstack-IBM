@@ -11,7 +11,7 @@ num = 20
 console.log(num)
 const num2 = 3
 console.log(num2)
-function myfunction(num+num2){
+function myfunction(num){
     console.log(num)
 }
 myfunction();
