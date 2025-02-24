@@ -1,4 +1,5 @@
 /*
+Assignment: Day 9
 Section 1: Data Types & Length
 
 1)Ans
@@ -108,7 +109,7 @@ Section 5: Operators (Arithmetic, Assignment, Comparison, Logical)
     counter2(); // 1
     counter2(); // 2
 
-Some statement questions:
+SOME STATEMENT QUESTIONS    :
 
 1)Ans
     function reverseNumber(num) {
