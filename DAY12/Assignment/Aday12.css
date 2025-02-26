@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIQkowNi863m6olPlVt7N6WuaZC7PAQ5RW0A&s');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fefefe;
+    text-align: center;
+    padding: 20px;
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #333348;
+    padding: 20px;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 8px;
+}
+input, textarea, select, button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+input, textarea, select {
+    background: #3a3a55;
+    color: #ffffff;
+}
+button {
+    background: #ff5722;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+button:hover {
+    background: #e64a19;
+}
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background: #2e2e3d;
+    color: #ffffff;
+}
+th, td {
+    border: 1px solid #555;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background: #ff5722;
+}
+td img {
+    border-radius: 5px;
+}

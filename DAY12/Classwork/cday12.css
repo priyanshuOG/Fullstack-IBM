@@ -1,0 +1,40 @@
+body{
+    background-image: url("https://images.pexels.com/photos/1526713/pexels-photo-1526713.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+#parent{
+    padding-top: 50px;
+    width: 25%;
+    border : 1px solid black;
+    text-align: center;
+    margin:auto;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+input{
+    width: 87%;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+#parent button{
+    width: 50%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    margin-bottom: 30px;
+}
+table{
+    color: black;
+    margin: auto;
+    background-color: antiquewhite;
+    margin-top: 10px;
+}
+table, td{
+    border:#4CAF50 1px solid;
+    border-collapse: collapse;
+    padding: 10px;
+
+}
