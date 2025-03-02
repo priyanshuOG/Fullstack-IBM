@@ -110,21 +110,10 @@ function toggleDarkMode() {
 }
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    if (localStorage.getItem("darkMode") === "enabled") {
+
+document.addEventListener("DOMContentLoaded", function() {
+    if (localStorage.getItem("darkMode") === "true") {
         document.body.classList.add("dark-mode");
     }
-
-    // Ensure product listing functions only run on pages where they exist
-    if (document.getElementById("product-list") && typeof displayProducts === "function") {
-        displayProducts();
-    }
-
-    if (document.getElementById("cart-container") && typeof displayCart === "function") {
-        displayCart();
-    }
-
-    if (document.getElementById("checkout-container") && typeof displayCheckout === "function") {
-        displayCheckout();
-    }
+    filterProducts();
 });
