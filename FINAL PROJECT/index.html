@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizly - Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <div class="toggle-container">
+        <label class="switch">
+            <input type="checkbox" id="dark-mode-toggle">
+            <span class="slider"></span>
+        </label>
+        <span id="mode-text">Light Mode</span>
+    </div>
+
+    <!-- Welcome Screen -->
+    <div id="welcome-screen" class="screen">
+        <h1 class="fade-in">Welcome to <span class="highlight">Quizly!</span></h1>
+        <p class="intro-text">Select a category and difficulty level to start your quiz!</p>
+
+        <div class="card-container">
+            <!-- Category Selection -->
+            <div class="card">
+                <i class="fas fa-list-alt"></i>
+                <h3>Choose Category</h3>
+                <select id="category">
+                    <option value="9">General Knowledge</option>
+                    <option value="18">Computer Science</option>
+                    <option value="23">History</option>
+                    <option value="21">Sports</option>
+                </select>
+            </div>
+
+            <!-- Difficulty Selection -->
+            <div class="card">
+                <i class="fas fa-tachometer-alt"></i>
+                <h3>Choose Difficulty</h3>
+                <select id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+        </div>
+
+        <button class="animated-button" onclick="startQuiz()">Start Quiz</button>
+    </div>
+    
+    <!-- Quiz Screen -->
+    <div id="quiz-screen" class="screen hidden">
+        <h2 id="question" class="fade-in">Question Text</h2>
+        <div id="options" class="fade-in"></div>
+        <p id="timer">Time Left: <span id="time">30</span>s</p>
+        <button onclick="nextQuestion()">Next</button>
+    </div>
+
+    <!-- Result Screen -->
+    <div id="result-screen" class="screen hidden">
+        <h1 class="fade-in">Quiz Completed!</h1>
+        <p>Your Score: <span id="score">0</span></p>
+        <button onclick="restartQuiz()">Restart</button>
+        <button onclick="startQuiz()">Play Again</button>
+        
+        <!-- Leaderboard -->
+        <h2 class="fade-in">Leaderboard</h2>
+        <ul id="leaderboard"></ul>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
